@@ -2,13 +2,17 @@
 
 import sqlite3
 
+# lib/testing/select_test.py
+
 from sql_queries import (
     select_all_female_bears_return_name_and_age,
-    select_all_bears_names_and_orders_in_alphabetical_order,
-    select_all_bears_names_and_ages_that_are_alive_and_order_youngest_to_oldest,
-    select_oldest_bear_and_returns_name_and_age,
-    select_youngest_bear_and_returns_name_and_age,
+    select_all_alive_brown_bears_return_name_and_age,
+    select_all_bears_return_name_and_age_ordered_by_age_descending,  # Corrected function name
+    select_all_bears_return_name_and_age_with_limit
 )
+
+# Your test cases go here
+
 
 connection = sqlite3.connect(":memory:")
 
